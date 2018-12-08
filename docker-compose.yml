@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  my_node_sever:
+    image: my_node_sever
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
